@@ -4,14 +4,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pagina web</title>
+    <title>Venta de pollo y huevos</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
 </head>
 <body>
+    <header>
+      <!--NAV-->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#">Nombre Pagina</a>
+          <a class="navbar-brand" href="#">Pollos y huevos JS</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -21,16 +23,114 @@
                 <a class="nav-link active" aria-current="page" href="#">Inicio</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Parte2</a>
+                <a class="nav-link" href="#">Nosotros</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Proveedores</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">saber más</a>
               </li>
             </ul>
             <form class="d-flex">
               <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-              <button class="btn btn-outline-success" type="submit">Search</button>
+              <button class="btn btn-warning" type="submit">Search</button>
             </form>
           </div>
         </div>
       </nav>
-    
+      <!--FIN NAV-->
+    </header>
+    <main>
+      <!--IMAGENES-->
+      <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 4"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 5"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="./Imagenes/ima1.jpg" class="d-block w-100" alt="Panales de huevos">
+          </div>
+          <div class="carousel-item">
+            <img src="./Imagenes/ima2.jpg" class="d-block w-100" alt="gallina viva">
+          </div>
+          <div class="carousel-item">
+            <img src="./Imagenes/ima3.jpg" class="d-block w-100" alt="Gallina con huevos">
+          </div>
+          <div class="carousel-item">
+            <img src="./Imagenes/ima4.jpg" class="d-block w-100" alt="Gallo lista para la venta">
+          </div>
+          <div class="carousel-item">
+            <img src="./Imagenes/ima5.jpg" class="d-block w-100" alt="Panal de huevos solo">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </main> 
+
+    <section>
+      <div class="container">
+  
+          <!-- TITULO -->
+          <div class="col text-center">
+              <h3>¿Que ofrecemos?</h3>
+          </div>
+          <!-- /TITULO -->
+
+          <div class="row">
+            <!-- pollo-->
+    <div class="col-12 col-md-6 col-lg-4 mb-4">
+      <div class="card" style="width: 18rem;">
+          <img src="./Imagenes/card2.jpg" class="card-img-top" alt="Pollo despresado">
+          <div class="card-body">
+              <h5 class="card-title">El pollo</h5>
+              <p class="card-text">Traido de granja, recien pelado, es decir lo más fresco posible directo a nuestras vitrina para que usted no lleve a su mesa.</p>
+              <a href="#" class="btn btn-primary">Ver más información</a>
+          </div>
+      </div>
+    </div>
+    <!--Huevos-->
+    <div class="col-12 col-md-6 col-lg-4 mb-4">
+      <div class="card" style="width: 18rem;">
+          <img src="./Imagenes/card1.jpg" class="card-img-top" alt="Pollo despresado">
+          <div class="card-body">
+            <div>
+              <span class="badge bg-success">Tamaños</span>
+              <span class="badge bg-info text-dark">A</span>
+              <span class="badge bg-info text-dark">Doble A</span>
+             <span class="badge bg-info text-dark">Tripe A</span>
+            </div>
+              <h5 class="card-title">Los huevos</h5>
+              <p class="card-text">Huevo de granja, grande y fresco, con posibilidad de salir doble yema.</p>
+              <a href="#" class="btn btn-primary">Ver más información</a>
+          </div>
+      </div>
+    </div>
+      <div class="col-12 col-md-6 col-lg-4 mb-4">
+          <div class="card" style="width: 18rem;">
+            <img src="./Imagenes/card3.jpg" class="card-img-top" alt="Pollo despresado">
+              <div class="card-body">
+
+              <h5 class="card-title">Domiciolio gratis</h5>
+              <p class="card-text">Como plus para nuestros clientes ofrecemos el servicio a domiciolio totalemnte gratuito en la ciudad.</p>
+               <a href="#" class="btn btn-primary">Ver más información</a>
+             </div>
+             </div>
+          </div>
+          <!--Cierre cards-->
+        </div>
+      </div>
+    </section>
 </body>
 </html>
