@@ -2,7 +2,7 @@
 <html lang="en" >
 <head>
   <meta charset="UTF-8">
-  <title>CodePen - Log in/Sign up screen animation</title>
+  <title>Inicio Sesion</title>
   <link rel="stylesheet" href="./style.css">
 
 </head>
@@ -14,25 +14,24 @@
   <div class="frame">
     <div class="nav">
       <ul>
-        <li class="signin-active"><a class="btn">Sign in</a></li>
+        <li class="signin-active"><a class="btn">Inicio de sesion</a></li>
       </ul>
     </div>
-    <div ng-app ng-init="checked = false">
-				        <form class="form-signin" action="" method="post" name="form">
-          <label for="username">Username</label>
+    <div>
+				        <form  action="../now-ui-dashboard-master/examples/dashboard.html" method="post" name="form">
+          <label for="username">Usuario</label>
           <input class="form-styling" type="text" name="username" placeholder=""/>
-          <label for="password">Password</label>
+          <label for="password">Contraseña</label>
           <input class="form-styling" type="text" name="password" placeholder=""/>
           <div class="btn-animate">
-            <a class="btn-signin">Sign in</a>
+            <input type="submit" values="Iniciar" class="submit">
           </div>
 				        </form>
       
           
 </div>
 <!-- partial -->
-  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
-<script src='https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.3.14/angular.min.js'></script><script  src="./script.js"></script>
+
 
 </body>
 </html>
